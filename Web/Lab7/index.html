@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="file/style.css">
+    <title>Lab 7, Shvets Yevhen</title>
+</head>
+<body>
+    <center>
+        <div class="content">
+            <form class="form1" action="mailto:shvets_06@ukr.net" method="post">
+                <div>
+                    <label for="surname">Прізвище:</label>
+                    <br>
+                    <input class="input_" type="text" name="surname">
+                </div>
+                <div>
+                    <label for="firstname">Ім'я:</label>
+                    <br>
+                    <input class="input_" type="text" name="firstname">
+                </div>
+                <div>
+                    <label for="middlename">По-батькові:</label>
+                    <br>
+                    <input class="input_" type="text" name="middlename">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input class="input_" type="email" name="email">
+                </div>
+                <div>
+                    <label for="country">Країна:</label>
+                    <br>
+                    <select style="height: 22px; width: 128px;" NAME="country_selection"> 
+                        <option value="ukr" selected>Україна</option>
+                        <option value="pol">Польша</option>
+                        <option value="rum">Румунія</option>
+                        <option value="mold">Молдова</option>
+                        <option value="chex">Чехія</option>
+                        <option value="germ">Німеччина</option>
+                        <option value="fr">Франція</option>
+                        <option value="it">Італія</option>
+                    </select> 
+                </div>
+                <div class="check">
+
+                    <label for="language">Мова:</label>
+                    <br>
+                    <input type="checkbox" checked name="language" value="L_ukr">Українська
+                    <br>
+                    <input type="checkbox" name="language" value="L_get">Germany
+                    <br>
+                    <input type="checkbox" name="language" value="L_it">Italy
+                    <br>
+                    <input type="checkbox" name="language" value="L_eng">English
+                    <br>
+                    <input type="checkbox" name="language" value="L_other">Інша
+                    <br>
+                </div>
+
+                <div>
+                    <label for="prof">Професія:</label>
+                    <br>
+                    <select  name="prof" id="p1" multiple>
+                        <option value="Програміст">Програміст</option>
+                        <option value="Фермер">Фермер</option>
+                        <option value="Автомеханік">Автомеханік</option>
+                        <option value="Вчитель">Вчитель</option>
+                        <option value="Різноробочий">Різноробочий</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="password">Пароль:</label>
+                    <br>
+                    <input class="input_" type="password" name="password">
+                </div>
+                <div>
+                    <label for="info">Додаткова інформація: </label>
+                    <br>
+                    <textarea name="info" id="" cols="20" rows="6"></textarea>
+                </div>
+                <div>
+                    <br>
+                    <button type="submit">Відправити</button>
+                    <br>
+                    <br>
+                    <button type="reset">Стерти все</button>
+                </div>
+                <label for="hiiden" hidden>student = Yevhen</label>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
