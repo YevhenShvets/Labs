@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<style>
+    tr{
+        border: 1px solid black;
+    }
+    th{
+        border: 1px solid black;
+    }
+
+</style>
+<body>
+    <table style="border-collapse: collapse; border: 1px solid black; width: 500px; height: 160px;">
+        <tr>
+            <th colspan="2">1</th>
+            <th colspan="2" rowspan="2"><img src="https://picsum.photos/200/300" alt="" width="60px"></th>
+        </tr>
+        <tr>
+            <th colspan="2">3</th>
+        </tr>
+        <tr>
+            <th rowspan="2" style="background-color: yellow;">4</th>
+            <th>5</th>
+            <th rowspan="2">6</th>
+            <th rowspan="3" style="background-color: yellow;">7</th>
+        </tr>
+        <tr>
+            <th>8</th>
+        </tr>
+        <tr>
+            <th>9</th>
+            <th colspan="2">10</th>
+        </tr>
+    </table>
+</body>
+</html>

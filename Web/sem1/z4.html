@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<style>
+    .input_{
+        width: 193px;
+        
+    }
+
+    .btn{
+        background-color: blue;
+        padding:10px;
+    }
+</style>
+<body>
+    <form action="mailto:shvets" method="post" style="width: 200px;">
+        <div style="background-color: blue; padding-top: 10px; padding-bottom: 10px;">
+            New User
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            <br>
+            <input class="input_" type="text" name="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <br>
+            <input class="input_" type="password" name="password">
+        </div>
+        <div>
+            <label for="confirm_password">Confirm password:</label>
+            <br>
+            <input class="input_" type="text" name="confirm_password">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <br>
+            <input class="input_" type="email" name="email">
+        </div>
+        <div>
+            <br>
+            <button class="btn" type="submit">Submit</button>
+        </div>
+    </form>
+    <hr>
+    
+    <form action="mailto:shvets" method="post" style="width: 200px;">
+        <div style="background-color: blue; padding-top: 10px; padding-bottom: 10px;">
+            Returning User
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            <br>
+            <input class="input_" type="text" name="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <br>
+            <input class="input_" type="password" name="password">
+        </div>
+        <div>
+            <br>
+            <button class="btn" type="submit">Submit</button>
+        </div>
+        <div>
+            <br>
+            <a href="#pas">Забули пароль?</a>
+        </div>
+    </form>
+</body>
+</html>
