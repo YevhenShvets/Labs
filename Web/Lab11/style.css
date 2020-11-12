@@ -1,0 +1,63 @@
+html{
+    background:url(flag.png) fixed no-repeat bottom right;
+    background-color: lightgray;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10pt;
+    color: darkblue;
+    text-align: left;
+    text-indent: 1cm;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+    color: black;
+    text-align: left;
+    text-indent: 1cm;
+    font-weight: bold;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    color: lightblue;
+    text-align: left;
+    text-indent: 1cm;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+}   
+a:hover{
+    color: black;
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+table{
+    width: 200px;
+    height: 100px;
+    background: none;
+    text-indent: 0;
+    border: 3pt dotted black;
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90%;
+    text-align: center;
+    font-weight: normal;
+}
+
+td{
+    border: 3pt dotted black;
+}
+
+.tr1{
+    font-weight: bold;
+}

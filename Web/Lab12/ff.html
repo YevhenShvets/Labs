@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+        <meta charset="UTF-8">
+        <title> Обчислення максимального значення </title>
+        <script language="JavaScript">
+            function invert (obj)
+            { var a = Number (obj.num1.value);
+            obj.res.value =-a;}
+            </script>
+	</head>
+<body>
+	<h4> Міняємо знак числа </h4>
+	<form Name="form1">
+		Число: <input type="text" size="8" name="num1"> <hr>
+		Після зміни знаку число дорівнює
+		<input type="button" value='Определіть' onClick="invert(form1)">
+		<input type="text" size='8' name="res"> <hr>
+		<input type="reset">
+	</form>
+</body>
+</html>

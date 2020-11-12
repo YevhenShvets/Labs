@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var timeDiff;
+		var selectedCity;
+		var daylightSavingAdjust = 0;
+
+		function updateTimeZone(){
+			var lstCity = document.form1.lstCity;	
+			timeDiff = lstCity.options[lstCity.selectedIndex].value;
+			selectedCity = lstCity.options[lstCity.selectedIndex].text;
+			updateTime();
+		}
+
+		function getTimeString(dateObject){
+			var timeString;
+			var hours = dateObject.getHours();
+			if (hours<10) {
+				hours = "0"+hours;
+			}
+			var minutes = dateObject.getMinutes();
+			if (minutes<10) {
+				minutes="0"+minutes;
+			}
+			var seconds = dateObject.getSeconds();
+			if (seconds<10) {
+				seconds="0"+seconds;
+			}
+			timeString = hours+":"+minutes+":"+seconds;
+			return timeString;
+		}
+
+		function updateTime(){
+			var nowTime = new Date();
+			var resultsFrame = window.top.resultsFrame.document;
+			resultsFrame.open();
+			resultsFrame.write("Local time is " + getTimeString(nowTime)+"<br>"); 
+			nowTime.setMinutes (nowTime.getMinutes()+nowTime.getTimezoneOffset()+parseInt(timeDiff)+daylightSavingAdjust);
+			resultsFrame.write(selectedCity + " time is " + getTimeString(nowTime));
+			resultsFrame.close();
+		}
+
+		function chDaylightSaving_onclick(){
+			if (document.form1.chkDayLightSaving.checked) {
+				daylightSavingAdjust = 60;
+			}
+			else{
+				daylightSavingAdjust = 0;
+			}
+			updateTime();
+		}
+	</script>
+</head>
+<body onload = "updateTimeZone()">
+	<form name = form1>
+		<select size = 5 name = lstCity language="javascript" onchange="updateTimeZone();">
+			<option value=60 selected="true">Berlin</option>
+			<option value=330>Bombay</option>
+			<option value=0>London</option>
+			<option value=-300>New York</option>
+			<option value=60>Paris</option>
+			<option value=600>Sydney</option>
+			
+		</select>
+		<p> It's summer time in selected city
+		<input type="checkbox" name="chkDayLightSaving" onclick="return chDaylightSaving_onclick()">
+	</form>
+</body>
+</html>

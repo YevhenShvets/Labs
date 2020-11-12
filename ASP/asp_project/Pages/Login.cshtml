@@ -1,0 +1,19 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Login/Register";
+}
+
+
+<div class="text-center login_div">
+    <form>
+        <label class="login_label">Ім'я</label><br>
+        <input class="login_input" type="text">
+        <br>
+        <label class="login_label">Пошта</label><br>
+        <input class="login_input" type="email"><br>
+        <input type="button" class="login_button" value="Авторизуватися"><br>
+        <a asp-area="" asp-page="/Register" class="login_text_reg">Реєстрація</a>
+    </form>
+
+</div>

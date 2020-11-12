@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab13</title>
+</head>
+<style>
+    body{
+        background-color: mediumseagreen;
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .block{
+        margin: 10px auto;
+        padding: 20px;
+        background-color: lightsalmon;
+        border: 3px solid lightgray;
+        border-radius: 20px 0;
+        width: max-content;
+        text-align: center;
+    }
+
+    hr{
+        width: auto;
+        height: 2px;
+        border: none;
+        background-color: white;
+    }
+</style>
+<body onload="load()">
+    <span style="text-align: center; margin: 0 auto; display: block;">Дай Боже</span>
+    <span style="text-align: center; margin: 0 auto; display: block; font-weight: bold;" id="name"></span>
+    <div class="block">
+        <span class="span_" id="mounth"></span><hr>
+        <span class="span_" id="count"></span>
+    </div>
+
+    <div class="block">
+        <form action="" name="form">
+            <label for="">Enter value</label><br>
+            <input type="number" maxvalue="10" name="val">
+            <input type="button" onclick="random_game(form)" value="Ok">
+            <hr>
+            <span class="span_" id="ans"></span>
+        </form>
+    </div>
+
+    <div class="block">
+        <span id="z3"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

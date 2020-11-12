@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var currentImgNumber = 1;
+		var numberOFImages = 3;
+
+		function window_load(){
+				setTimeout("switchImage()",3000);
+		}
+
+		function switchImage(){
+			currentImgNumber++;
+			document.imgAdvert.src = "AdvertImage" + currentImgNumber + ".jpg";
+			if (currentImgNumber < numberOFImages) {
+				setTimeout("switchImage()",3000);
+			}
+		}
+	</script>
+</head>
+<body onload = "window_load()">
+	<img src = "AdvertImage1.jpg" name = "imgAdvert">
+
+</body>
+</html>
