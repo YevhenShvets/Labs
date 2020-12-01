@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 15</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .div{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    hr{
+        border: 1px solid blue;
+        margin: 0px 50px;
+    }
+    center{
+        margin: 20px 0;
+    }
+</style>
+<body onclick="window_click()">
+    <div class="div">
+        <input type="text" onchange="text_change()">
+    </div>
+    <hr>
+    <center>
+        <label for="">Enter 1 zp</label>
+        <input type="text" id="z1">
+        <label for="">Enter 2 zp</label>
+        <input type="text" id="z2">
+        <label for="">Enter 3 zp</label>
+        <input type="text" id="z3"><br>
+        <input type="text" value="Focus" onfocusout="on_focus()">
+    </center>
+    <hr>
+    <div class="div">
+        <input type="button" value="$/hour" onclick="z3()">
+        <input type="button" value="Focus" onfocus="z3_1()">
+    </div>
+    <hr>
+    <div class="div">
+        <label for="">Enter value</label>
+        <input type="text" id="z4" onblur="z4()">
+    </div>
+    <hr>
+    <div class="div">
+        <label for="">Enter uah</label>
+        <input type="number" id="z5" onchange="z5()">
+        <div id="z5_ans"></div>
+    </div>
+    <hr>
+    <div class="div">
+        <input type="text" id="last_z">
+        <input type="button" value="reverse" onclick="reverse_()">
+        <input type="button" value="ucFirst" onclick="ucfirst_()">
+        <input type="button" value="ucWorlds" onclick="ucworlds_()">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

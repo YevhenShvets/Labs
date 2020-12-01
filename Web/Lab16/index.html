@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 16</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .div{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    canvas{
+        width:800px !important;
+        height:300px !important;
+    }
+</style>
+<body>
+    <center>
+        <label for="">Enter surname</label>
+        <input type="text" id="surname"><br>
+        <label for="">Enter year</label>
+        <input type="number" id="year"><br>
+        <input type="button" onclick="add_()" value="Add">
+    </center>
+    <div class="div">
+        <canvas id="myChart" width="100" height="100"></canvas>
+    </div>
+    <input style="display: block; margin: 0 auto;" type="button" value="Show" onclick="show_()">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</body>
+</html>

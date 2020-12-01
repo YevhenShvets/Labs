@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 17</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .main{
+        display: block;
+        margin: 10px auto;
+        border-radius: 10px;
+        width: min-content;
+        border: 2px solid darksalmon;
+        padding: 10px 30px;
+    }
+
+    .body{
+        display: block;
+        width: min-content;
+        margin: 0 auto;
+    }
+
+    a{
+        display: block;
+        width: max-content;
+        text-decoration: none;
+        color:black;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 16px;
+        background-color: blue;
+    }
+    a:hover{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="body">
+            <center>
+                <input type="radio" checked value = "L" name="r">L
+                <input type="radio" value = "S" name="r">S
+                <input type="radio" value = "V" name="r">V
+            </center> <br>
+            <label>Enter radius</label>
+            <input type="number" id="value1">
+            <input type="button" value="Enter" onclick="answer1()">
+            <center>
+                <p id="answer1"></p>
+            </center>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="body">
+            <center>
+                <input type="radio" checked value = "Cone" name="r1">Cone
+                <input type="radio" value = "Сylinder" name="r1">Сylinder
+            </center> <br>
+            <label>Enter radius</label>
+            <input type="number" id="value2">
+            <label>Enter height</label>
+            <input type="number" id="value2_2">
+            <input type="button" value="Enter" onclick="answer2()">
+            <center>
+                <p id="answer2"></p>
+            </center>
+        </div>
+    </div>
+    <div class="main">
+        <div class="body">
+            <center>
+                <a href="test.html" target="_blank">Start test</a>
+            </center>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
