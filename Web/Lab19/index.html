@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 19</title>
+</head>
+<style>
+    body{
+        margin: 10px;
+        padding: 0;
+    }
+
+    table{
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+
+    td{
+        border: 1px solid black;
+        padding: 20px;
+    }
+    tr:nth-child(odd) {background: #fabcaa}
+
+    .center{
+        display: block;
+        width: min-content;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
+</style>
+<body>
+    <center>
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <p></p>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+        </table>
+    </center>
+    <p></p>
+    <button id="doubleclick" class="center">double click</button>
+    <img src="https://picsum.photos/200/300?random=1" id="image" class="center">
+
+
+
+    <div id="div1" class="hide">
+        1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ea animi similique nam ducimus fuga molestiae sapiente quasi? Architecto est animi sunt magni. Quisquam iusto quaerat totam. Sed, quisquam itaque.
+    </div>
+    <div id="div2" class="hide">
+        2Lorem  ea animi similique nam ducimus fuga molestiae sapiente quasi? Architecto est animi sunt magni. Quisquam iusto quaerat totam. Sed, quisquam itaque.
+    </div>
+    <div id="div3" class="hide">
+        3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, magni.
+    </div>
+    <div id="div4" class="hide">
+        4fdfsfdfdsdfsdfsdfsdfds;dfjlkasdfj dslafhdlafhsd kafh ls
+    </div>
+    <div id="div5" class="hide">
+        5Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab, nobis natus a sint voluptatum aspernatur aliquid animi ex rerum fuga soluta vitae fugiat, quidem dolorum enim voluptatibus corrupti doloribus mollitia provident iusto nemo! Tempore exercitationem veniam molestias veritatis. Ipsum amet ipsam officia maiores ut nemo sit iure harum quibusdam? Sequi consequatur inventore consequuntur sint aspernatur accusantium non, mollitia et vero reiciendis voluptates cupiditate aperiam eveniet iste necessitatibus saepe quo. Molestiae facere officiis culpa recusandae qui libero sed tempore deleniti, ratione placeat mollitia enim molestias corporis maiores perferendis dignissimos delectus maxime voluptas corrupti cupiditate. Harum deleniti fugiat voluptas repellat provident?
+    </div>
+
+    <button id="div_show" class="center">Random div</button>
+
+    <p></p>
+
+    <button id="images_img" class="center">Click</button>
+    <img src="https://picsum.photos/200/300?random=1" width="100" height="150" id="image1" class="center">
+    <img src="https://picsum.photos/200/300?random=2" width="100" height="150" id="image2" class="center">
+    <img src="https://picsum.photos/200/300?random=3" width="100" height="150" id="image3" class="center">
+    <img src="https://picsum.photos/200/300?random=4" width="100" height="150" id="image4" class="center">
+    <img src="https://picsum.photos/200/300?random=5" width="100" height="150" id="image5" class="center">
+    <img src="https://picsum.photos/200/300?random=6" width="100" height="150" id="image6" class="center">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+          $("#images_img").click(function(){
+            $("image1").slideUp();
+          });
+          $(".btn2").click(function(){
+            $("p").slideDown();
+          });
+        });
+        </script> -->
+    <script src="script.js"></script>
+</body>
+</html>

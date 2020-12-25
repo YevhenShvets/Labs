@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 18</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+
+        background-color: lemonchiffon;
+
+        font-size: 20px;
+        color: rgb(53, 54, 59);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .anket{
+        display: block;
+        width: max-content;
+        margin: 10px auto;
+        padding: 20px;
+
+        border: 2px solid gray;
+        border-radius: 20px;
+
+        background-color: lightsalmon;
+    }
+
+    .checkbox{
+        width: max-content;
+        display: block;
+        background-color: rgba(255,255,255,0.2);
+        padding: 7px;
+        margin: 4px;
+        border-radius: 20px;
+    }
+    .checkbox:hover{
+        background-color: rgba(255,255,255,0.5);
+        cursor: pointer;
+    }
+
+    input[type=checkbox]{
+        cursor: pointer;
+    }
+
+    input[type=button]{
+        border: 1px solid gray;
+        background: greenyellow;
+        font-size: 18px;
+        border-radius: 20px;
+        padding: 8px;
+    }
+    input[type=button]:hover{
+        background: rgb(173, 255, 47, 0.5);
+    }
+
+</style>
+
+<body onload="load_()">
+    <div class="anket">
+        <p>Виберіть, які розділи повинні бути у студентській газеті</p>
+
+        <div id="checks" onselectstart="return false">
+        </div>
+
+        <input type="button" onclick="add_to_textarea()" value="Вибрати" style="display: block; width: max-content; margin: 10px auto;">
+
+        <div class="textarea">
+            <textarea id="textarea" cols="120" rows="10"></textarea>
+        </div>
+    </div>
+
+
+    <div class="anket">
+        <center>Анкета перекладача</center>
+        <label>Введіть ваше ім'я</label><br>
+        <input type="text" id="name"><br>
+        <p>Виберіть мови, якими ви володієте</p>
+        <div id="checks2">
+
+        </div>
+        <input type="button" onclick="add_2()" value="Добавити" style="display: block; width: max-content; margin: 10px auto;">
+        <div id="textarea2">
+            
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

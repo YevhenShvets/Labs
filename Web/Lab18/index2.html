@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 18.2</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+
+        background-color: lemonchiffon;
+
+        font-size: 20px;
+        color: rgb(53, 54, 59);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .div{
+        display: block;
+        margin: 0 auto;
+        width: max-content;
+        padding: 50px 100px;
+        border-radius: 30px;
+        background-color: rgba(114, 230, 175, 0.5);
+    }
+    select{
+        background-color: rgb(237, 240, 196);
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        min-width: 200px;
+    }
+    input[type=button]{
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 12px;
+        background-color: rgb(10, 88, 30);
+        color: white;
+    }
+</style>
+<body>
+    <div class="div">
+        <h2>Виберіть курс</h2>
+        <label>Назва курсу:</label><br>
+        <select name="course_name" id="course_name-id" onchange="change_course()">
+            <option value="Інформатика">Інформатика</option>
+            <option value="Бази даних">Бази даних</option>
+            <option value="Ресурси Інтернет">Ресурси Інтернет</option>
+            <option value="Аналіз алгоритмів">Аналіз алгоритмів</option>
+        </select><br>
+        <label>Тривалість:</label><br>
+        <select name="course_time" id="course_time-id" onchange="change_course()">
+            <option value="36">36</option>
+            <option value="64">64</option>
+            <option value="128">128</option>
+        </select><br>
+        <label>Мова проведення:</label><br>
+        <select name="course_lan" id="course_lan-id" onchange="change_course()">
+            <option value="Українська">Українська</option>
+            <option value="Англійська">Англійська</option>
+        </select><br>
+        <label>Звітність:</label><br>
+        <select name="course_zv" id="course_zv-id" onchange="change_course()">
+            <option value="Іспит">Іспит</option>
+            <option value="Залік">Залік</option>
+        </select><br>
+
+        <h3 id="price" style="margin: 0 auto; display: block; width:  max-content;"></h3>
+        <input type="button" value="Придбати курс" onclick="alert('Дякуємо');">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
